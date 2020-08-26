@@ -10,12 +10,22 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
           crossorigin="anonymous">
+
+    <style>
+        .cursor-not-allowed {
+            cursor: not-allowed;
+        }
+        .link-disabled {
+            pointer-events: none;
+            color: grey;
+        }
+    </style>
 </head>
 <body class="min-vh-100 d-flex flex-column container">
 <a class="sr-only sr-only-focusable" href="#main">Skip to main</a>
 <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="/">
-        <img width="88" height="30" src="img/kyori.png" alt="Logo"/>
+        <img width="128" height="44" src="img/kyori.png" alt="Logo"/>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar"
@@ -57,8 +67,8 @@
                 docs
             </a>
         </div>
-        <div class="col-auto">
-            <a href="#">
+        <div class="col-auto cursor-not-allowed">
+            <a class="link-disabled" aria-disabled="true" href="#">
                 javadocs
             </a>
         </div>
